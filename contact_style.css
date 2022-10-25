@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    background-color:  #fef1df;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.navbar{
+    list-style-type: none;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    }
+    form h1{
+    font-size: 20px;
+
+    }
+    form .séparation{
+        width: 100%;
+        height: 1px;
+        background-color: purple;
+    }
+    form .corps_formulaire{
+        display: flex; 
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+        form .corps_formulaire .boite{
+            position: relative; /* permet de positionner les éléments dans le flux de la page */
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+            form .corps_formulaire .gauche .boite input{
+                margin-top: 5px;
+                padding: 10px 5px 10px 30px;
+                border: 1px solid wheat;
+                outline-color: purple;
+                border-radius: 5px; 
+            }
+            form .corps_formulaire .gauche .boite i{
+                position: absolute; /*positionne l'élément par rapport à son parent le plus proche */
+                left: 0;
+                top: 25px;
+                padding: 9px 8px;
+                color: purple;
+            }
+                
+        form .corps_formulaire .droite{
+            margin-left: 50px;
+        }
+            form .corps_formulaire .droite .boite{
+                height: 100%;
+            }
+            form .corps_formulaire .droite .boite textarea{
+                margin-top: 5px;
+                padding: 10px;
+                background-color: #f8f8f8;
+                border: 1px solid wheat;
+                outline: none;
+                border-radius: 5px;
+                resize: none;
+                height: 87%;
+            }
+    form .pied_formulaire button{
+        margin-top: 10px;
+        background-color: purple;
+        color: white;
+        font-size: 15px;
+        border: none; 
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.5s; /* exécute le transform dans un délai défini */
+    }
+    form .pied_formulaire button:hover{
+        transform: scale(1.05)
+    }
+
+@media screen and (max-width:920px){ /* ce media queries permet d'adapter des éléments si la taille de l'écran est inférieure aux px précisés, 920 si l'écran est un téléphone) */
+    form .corps_formulaire .droite{
+        margin-left: 0px;
+    }
+}

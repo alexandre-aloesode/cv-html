@@ -3,135 +3,385 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="cv-alexandre-aloesode.css">
-    <title>Mon CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <script defer src="script.js"></script>
+    <title>My Homepage</title> 
 </head>
 
 <body>
-    <nav class="menu">
-        <ul class="navbar">
-            <li><a href="/home/alex/Github/cv-html/cv-alexandre-aloesode.html">Mon CV</a></li>
-            <li><a href="/home/alex/Github/cv-html/contact.html">Contact</a></li>
+
+    <nav id="basic_nav">
+
+        <a href="index.html">
+            <p>
+                <span class="material-symbols-outlined">engineering</span>
+                Alexandre ALOESODE
+            </p>
+        </a>
+
+        <ul>
+
+            <li><a href="cv.html">Mon CV</a></li>
+
+            <li><a href="#skills">Mes Compétences</a></li>
+
+            <li><a href="#projets">Mes Projets</a></li>
+
+            <li><a href="contact.html">Me Contacter</a></li>
+
         </ul>
+
     </nav>
-    <div class="CV">
-        <div class="gauche">
-            <div class="photo">
-                <img src="avatar.jpg" alt="Photo_CV_Alexandre_ALOESODE" width="250">
-            </div>  
-            <div class="contact">
-                    <h1>Contact</h1>     
-                    <p>17 rue Baussenque, 13002 Marseille</p>
-                    <p>+33 6 08 89 33 18</p>
-                    <p>alexandrealoesode@gmail.com</p>
-            </div>
-            <div class="skills">
-                <h1>Compétences</h1>
-                <ul>
-                    <h3>Professionnelles</h3>
-                        <li>Négociation commerciale</li>
-                        <li>Management</li>
-                        <li>Gestion de projet</li>
-                    <h3>Informatiques</h3>
-                        <li>Progiciels (SAP, INES)</li>
-                        <li>Pack Office</li>
-                    <h3>Linguistiques</h3>
-                        <li>Anglais billingue</li>
-                        <li>Espagnol courant</li>
-                </ul>
-            </div>
-            <div class="formations">
-                <h1>Formations</h1>
-                    <ul>
-                        <li>Depuis 09/2022, diplôme visé: DWWM (Développeur WEB) <br>La Plateforme</li>
-                        <li>2014: Master du développement à l'International <br>Pôle Paris Alternance</li>
-                        <li>2011: Licence Commerce et Gestion <br>European Business School</2011></li>
-                        <li>2007: Baccalauréat ES option classe européenne en Espagnol <br>Lycée Rodin</li>
-                    </ul>
-            </div>
-            <div class="personnalite">
-                <h1>Personnalité</h1>
-                    <ul>
-                        <h3>Points forts</h3>
-                        <p>Relationnel, Autonomie, Mobilité, Polyvalence, Pédagogie</p>
-                        <h3>Centres d'intérêt</h3>
-                        <p>Jeux vidéos, Cinéma/séries, Sport, Voyages,</p>
-                    </ul>
-            </div>
-            <div class="stages">
-                <h1>Stages</h1>
-                    <ul>
-                        <li><b>2011: CFAO MOTORS Ghana (2 mois)</b> <br>Vendeur</li>
-                        <li><b>2010-2011: CFAO MOTORS Togo (6 mois)</b> <br>Front Office</li>
-                        <li><b>2010: GL EVENTS (2 mois)</b> <br>Prospection Téléphonique</li>
-                        <li><b>2008: QUICKSILVER (2 mois)</b> <br>Vendeur</li>
-                    </ul>
+
+    <nav id="burger_nav">
+
+        <a href="index.html">
+            <p>
+                <span class="material-symbols-outlined">engineering</span>
+                Alexandre ALOESODE
+            </p>
+        </a>
+        
+        <div id="burger_content">
+
+            <i class="fa-solid fa-bars" id="burger"></i>
+
+            <ul id="burger_ul">        
+
+                <li><a href="cv.html">Mon CV</a></li>
+
+                <li><a href="#skills">Mes Compétences</a></li>
+
+                <li><a href="#projets">Mes Projets</a></li>
+
+                <li><a href="contact.html">Me Contacter</a></li>
+
+            </ul>
+            
+        </div>
+
+    </nav>
+
+    <header class="white_box">
+
+        <div class="texte-presentation">
+            <p><span class="material-symbols-outlined">
+                home_pin
+                </span>  Marseille, France</p>
+            <h1>Bonjour, bienvenue sur mon site</h1>
+            <p>
+                J'ai intégré la promo "Start" de l'école La Plateforme en Septembre 2022, avec pour projet de devenir Développeur 
+                Back End. Je recherche un poste en alternance dans le cadre de mon cursus de formation.
+            </p>
+
+            <ul id="links">
+                <li><strong>Email</strong> 
+                    <span class="material-symbols-outlined">call_made</span>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alexandre-aloesode-29501694/"><strong>LinkedIn</strong> 
+                    <span class="material-symbols-outlined">call_made</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/alexandre-aloesode"><strong>GitHub</strong> 
+                    <span class="material-symbols-outlined">call_made</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cv.html"><strong>CV</strong> 
+                    <span class="material-symbols-outlined">call_made</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="pres-pic">
+            <img id="main-pic" src="Photo_WEB.jpg">
+        </div>
+
+    </header>
+
+    <section id="about" class="color_box">
+        <h2>A propos de moi</h2>
+        <div class="about-text">
+            <p>
+                Titulaire d'un Master en Commerce International depuis 2014, j'ai travaillé dans différents pays en tant que 
+                Responsable Commercial. Mes différentes expériences professionnelles ont toujours comporté une part de digital, 
+                et m'ont amené à travailler au quotidien avec des Développeurs. Cela m'a permis de découvrir ce métier, et a 
+                éveillé en moi une nouvelle passion. J'ai aujourd'hui l'opportunité d'effectuer ma reconversion professionnelle, 
+                et vous invite à ce titre à me découvrir plus en détails sur cette page.
+            </p>
+        </div>       
+    </section>
+
+    <section id="skills" class="white_box">
+        <h2>Mes compétences informatiques</h2>
+
+        <div class="general">
+            <h3>Compétences générales</h3>
+            <ul>
+                <li>Linux</li>
+                <li>GitHub</li>
+                <li>SQL</li>
+            </ul>
+
+            <h3>Développement front-end</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+
+            <h3>Développement back-end</h3>
+            <ul>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="projets" class="color_box">
+
+        <h2>Mes projets</h2>
+        <p>
+            Dans le cadre de ma formation, je réalise divers projets, personnels ou en équipe, et 
+            dans différents langages informatiques. Ci-dessous un aperçu de mes réalisations, dont 
+            vous trouverez la liste complète <a href ="https://github.com/alexandre-aloesode" target="blank_">sur ma page GitHub.</a>
+        </p>
+
+        <h3>HTML / CSS</h3>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                 
+                        <img src="https://i.discogs.com/6xiM_6I00oIhL8CFCLHtP6e1i3woptaF3RnWCWkcVfE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzQ3/Mjk4LTE1MTQ2NzI3/MzQtMTI4NS5qcGVn.jpeg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Réalisation de mon portfolio</h4> 
+                    <p>
+                        Ce site portfolio que j'ai réalisé entièrement, a pour objectif de me présenter, mais aussi d'atester
+                        de mes compétences en HTML/CSS.
+                        <a href="https://github.com/alexandre-aloesode/cv-html" target="blank_"> Cliquer ici</a> pour 
+                        parcourir le code de mes différentes pages.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="droite">
-            <div class="presentation">
-                    <a href="https://www.linkedin.com/in/alexandre-aloesode-29501694/LinkedIn"> <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/alexandre-aloesode"><i class="fa-brands fa-github"></i></a>
-                    <p style="font-size:25px"><i>Alexandre</i></p>
-                    <p style="font-size:30px"><b>ALOESODE</b></p>
-                    <p style="font-size:20px"><i>Anciennement Responsable Commercial (8 années d'expérience professionnelle) <br>Projet de reconversion en Développeur WEB <br>Permis B</p></i>
-                    <p>Né le 20/03/1989 <br>Nationalité Franco-Togolaise</p>
+            
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://i0.wp.com/laplateforme.io/wp-content/uploads/2021/07/HP_visual_light.jpg?resize=1080%2C1080&ssl=1">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Ma version du site de La Plateforme</h4>  
+                    <p>
+                        L'objectif de ce projet était de réaliser en 2 jours le plus possible de pages 
+                        du site de notre école.
+                    </p>
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/site-la-plateforme/accueil.html" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/site-la-plateforme" target="blank_">
+                        Vers le code
+                    </a>                 
+                </div>
             </div>
-            <div class="profil">
-                <h1>Profil</h1>
-                    <p>D'un naturel curieux et ouvert d'esprit, ma formation initiale en école de commerce m'a permis de découvrir différentes cultures et différents environnements de travail. Ce parcours m'a également amené à travailler en collaboration avec des Développeurs WEB. Cette découverte a révélé en moi une véritable passion; j'ai donc fait le choix de me reconvertir, dans le but de devenir un Développeur Back End. </p>
-            </div>            
-            <div class="exp">
-                <h1>Expériences professionnelles</h1>
-                    <ul> 
-                        <li>2021-2022 (Paris, France 12 mois) <br><b>AUTODISTRIBUTION (Division Poids Lourds)</b> <br><u>Chef de projets Grands Comptes</u></li>
-                            <ul>
-                                <li>Suivi et animation au quotidien des accords Grands Comptes</li>
-                                <li>Participation à l'ouverture de nouveaux accords Grands Comptes</li>
-                                <li>Réponse aux appels d'offres et tarification</li>                
-                                <li>Formation des équipes aux nouveaux process informatiques</li>
-                            </ul>
-                            <br>
-                        <li>2019-2020 (Lomé, Togo, 12 mois) <br><b>HEAVYMAT INDUSTRY (Concessionnaire poids lourds et engins de chantiers présents dans 6 pays d'Afrique de l'Ouest)</b> <br><u>Développeur d'Affaires pièces de rechange</u></li>
-                            <ul>
-                                <li>Responsable du développement commercial de l’activité pièces de rechange ; 40 % de hausse du chiffre d’affaires entre 2019 et 2020.</li>
-                                <li>Recrutement, formation et management de commerciaux pour chaque pays</li>
-                                <li>Missions de formation des équipes et de prospection dans les différentes filiales</li>
-                                <li>Etudes de marché, veille concurrentielle, définition des politiques de prix par pays, mise en place de stratégies et canaux de vente/distribution</li>
-                                <li>Reporting financier et analyse des chiffres de l’activité pièces de rechange</li>
-                            </ul>
-                            <br>
-                        <li>2017-2019 (Paris, France, 24 mois) <br><b>3DSOFT (édition de logiciels dans l'industrie automobile)</b> <br><u>Responsable Commercial Nouveaux Marchés</u></li>
-                            <ul>
-                                <li>Commercialisation de MecaPlanning, logiciel d’ordonnancement pour les ateliers mécaniques (prospection, présentation du logiciel, négociation)</li>
-                                <li>Déploiement du logiciel dans les concessions et formation du personnel</li>
-                            </ul>
-                            <br>
-                        <li>2016-2017 (Paris, France, 8 mois) <br><b>Prestige ISO (vente aux particuliers, BTP)</b> <br><u>Commercial B2C</u></li>
-                            <ul>
-                                <li>Commercialisation en Ile de France de produits d’isolation et d’installations électriques pour l’habitat</li>
-                                <li>Déplacements au domicile du client pour étude des besoins, réalisation de devis, négociation commerciale et conclusion de vente</li>
-                            </ul>
-                            <br>
-                        <li>2016-2016 (Abidjan, Côte d'Ivoire, 15 mois) <br> <b>IMED (association d'aide à l'export pour les entreprises françaises)</b> <br><u>Responsable antenne Côte d'Ivoire</u></li>
-                            <ul>
-                                <li>Mission de 12 mois pour le compte d’SCB et OCEANA filiales du groupe Compagnie Fruitière (développement commercial, management d'équipes, études de terrain, réalisation de supports marketing, animation de salons, création d'outils de reporting)</li>
-                                <li>Mission de 3 mois pour la société Pharmaguideur (études de terrain)</li>
-                            </ul>
-                            <br>
-                        <li>2013-2014 (Argenteuil, France, 18 mois) <br><b>VENTANA GROUP (sous-traitance aéronautique et spatiale)</b> <br><u>Assistant Commercial</u></li>    
-                    </ul>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://images.cointelegraph.com/images/1200_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9kZjQxYWZkNjdjNWE2NzFiODJkYjY0MzQ3N2E0NGM3OS5KUEc=.jpg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Réalisation d'un Fansite </h4>  
+                    <p>
+                        Un de mes projets fût de réaliser un site dédié à un hobby. J'ai choisi 
+                        Mobile Legends, un jeu vidéo qui m'occupe à mes heures perdues.
+                    </p>
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/Fansite/index.html" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/fansite" target="blank_">
+                        Code des différentes pages
+                    </a> 
+                </div>
             </div>
-            <div class="liens">
-                <ul>
-                    <li><a href="https://alexandre-aloesode.students-laplateforme.io/site-la-plateforme/accueil.html">Lien vers ma version du site La Plateforme</a></li>
-                    <li><a href="https://github.com/alexandre-aloesode/cv-html">Lien Github pour le coding de mon CV</a></li>
-                    <li><a href="https://github.com/alexandre-aloesode/site-la-plateforme">Lien Github pour le coding de mon site La Plateforme</a></li>  
-                </ul>
+        </div>
+        
+        <h3>PYTHON</h3>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://www.cdiscount.com/pdt2/7/3/7/1/700x700/unb0717993050737/rw/en-bois-tic-tac-toe-morpion-jeu-unique-a-la-main-q.jpg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Ma version du Morpion</h4>  
+                    <p>
+                        L'objectif de ce projet était de réaliser le jeu Morpion en Python, le tout en une journée.
+                    </p>
+                    <a href="https://github.com/alexandre-aloesode/python-projects/blob/alexandre-aloesode/morpion.py" target="blank">
+                        Lien vers le code
+                    </a>
+                </div>
             </div>
-        </div>   
-    </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://cdn-icons-png.flaticon.com/512/6168/6168680.png">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Ma version du Pendu</h4>  
+                    <p>
+                        L'objectif de ce projet était de réaliser le jeu du Pendu en Python, le tout en une journée.
+                    </p>
+                    <a href="https://github.com/alexandre-aloesode/python-projects/blob/alexandre-aloesode/pendu.py" target="blank">
+                        Lien vers le code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h3>PHP</h3>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://www.cdiscount.com/pdt2/7/3/7/1/700x700/unb0717993050737/rw/en-bois-tic-tac-toe-morpion-jeu-unique-a-la-main-q.jpg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Ma version du Morpion</h4>  
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/PHP/Morpion/index.php" target ="blank_">
+                        Vers le jeu
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/runtrack2/blob/alexandre-aloesode/jour08/job05/index.php" target="blank_">
+                        Vers le code
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://www.grazia.fr/wp-content/uploads/grazia/2021/10/annuler-partage-connexion-615x410.jpeg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Module de connexion</h4>  
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/moduleconnexion/index.php" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/moduleconnexion" target="blank_">
+                        Vers le code
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://www.mariage.fr/shop/photos/livre-d-or-bois.jpg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Livre d'or</h4>  
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/livre-or/index.php" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/livre-or" target="blank_">
+                        Vers le code
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://www.easyrequest.fr/image/bureau-salle-reservation.jpg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Réservation de salles</h4>  
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/reservation-salles/index.php" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/reservation-salles" target="blank_">
+                        Vers le code
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://play-lh.googleusercontent.com/nzLlY6sVzACWwIQSKHLZdp9QY2UIhXUH3K4zzrfs0JG-cfq0xmR51ivmAPcXG26JYw">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Jeu du Memory</h4>  
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/memory/index.php" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/memory" target="blank_">
+                        Vers le code
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://www.grazia.fr/wp-content/uploads/grazia/2021/10/annuler-partage-connexion-615x410.jpeg">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Module de connexion</h4>  
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/moduleconnexion/index.php" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/moduleconnexion" target="blank_">
+                        Vers le code
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">                
+                        <img src="https://cdn-icons-png.flaticon.com/512/6168/6168680.png">
+                </div>
+                <div class="flip-box-back">
+                    <h4>Ma version du Pendu en PHP (projet personnel)</h4>  
+                    <h5>Liens :</h5>
+                    <a href="https://alexandre-aloesode.students-laplateforme.io/PHP/Pendu/index.php" target ="blank_">
+                        Vers le site
+                    </a>
+                    <a href="https://github.com/alexandre-aloesode/projets_perso/tree/main/php/pendu" target="blank_">
+                        Vers le code
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
